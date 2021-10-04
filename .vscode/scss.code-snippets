@@ -1,0 +1,11 @@
+{
+  "Print to console": {
+      "prefix": "media-layout",
+      "body": [
+          "@media #{${1:$$sm-layout-up}} {",
+          "  $2",
+          "}"
+      ],
+  }
+}
+

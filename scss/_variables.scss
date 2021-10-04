@@ -1,0 +1,25 @@
+$red: #ff1834;
+$green: #23ae6b;
+$orange: #ff6b18;
+$light: #e6e6e6;
+$body-color: #141414;
+
+// Responsive Variables
+$xs-layout: "(max-width: 575.98px)";
+$sm-layout: "(min-width: 576px) and (max-width: 767.98px)";
+$md-layout: "(min-width: 768px) and (max-width: 991.98px)";
+$lg-layout: "(min-width: 992px) and (max-width: 1199.98px)";
+$xl-layout: "(min-width: 1200px) and (max-width: 1399.98px)";
+$xxl-layout: "(min-width: 1400px)";
+
+$sm-layout-up: "(min-width: 576px)";
+$md-layout-up: "(min-width: 768px)";
+$lg-layout-up: "(min-width: 992px)";
+$xl-layout-up: "(min-width: 1200px)";
+$xxl-layout-up: "(min-width: 1400px)";
+
+$sm-layout-down: "(max-width: 575.98px)";
+$md-layout-down: "(max-width: 767.98px)";
+$lg-layout-down: "(max-width: 991.98px)";
+$xl-layout-down: "(max-width: 1199.98px)";
+$xxl-layout-down: "(max-width: 1399.98px)";

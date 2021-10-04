@@ -1,0 +1,40 @@
+@import "./reset";
+@import "./variables";
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: $body-color;
+  color: $light;
+  letter-spacing: 0.04rem;
+  @media #{$xs-layout} {
+    padding: {
+      top: 1rem;
+      left: 1rem;
+      right: 1rem;
+    }
+  }
+
+  @media #{$md-layout-up} {
+    padding: {
+      top: 1rem;
+      left: 100px;
+      right: 100px;
+    }
+  }
+}
+
+main {
+  @media #{$sm-layout-up} {
+    width: 80%;
+    margin: auto;
+  }
+  @media #{$lg-layout-up} {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@import "./header";
+@import "./score";
+@import "./result";
+@import "./player_area";

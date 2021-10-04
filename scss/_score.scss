@@ -1,0 +1,43 @@
+.score-board {
+  margin-top: 2.5rem;
+  padding: {
+    top: 2.3rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 2.3rem;
+  }
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: lighten($body-color, $amount: 3);
+  border-radius: 0.2rem;
+  & .score-label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  & .score-value {
+    color: #cccaca;
+    display: flex;
+    justify-content: space-evenly;
+    padding: {
+      left: 0.3rem;
+      right: 0.3rem;
+    }
+    &-comp {
+      margin: {
+        right: 1rem;
+        // left: 2rem;
+      }
+    }
+    &-user {
+      margin: {
+        // right: 2rem;
+        left: 1rem;
+      }
+    }
+  }
+}

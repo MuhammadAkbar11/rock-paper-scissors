@@ -5,32 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Suwit Jawa V2.0</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/styles.live.min.css">
 </head>
 
 <body>
-    <h1>Suwit Jawa v2.0</h1>
 
-    <div class="container">
-        <div class="area-komputer">
-            <img src="img/gajah.png" class="img-komputer">
+    <header class="header">Suit Game</header>
+
+    <main>
+        <section class="score-board">
+            <div class="score-label score-label-comp">Computer
+
+            </div>
+            <div class="score-value">
+                <span class="score-value-comp">0</span>
+                <span class="score-value-separator">:</span>
+                <span class="score-value-user">0</span>
+            </div>
+            <div class="score-label score-label-user">Anda</div>
+        </section>
+
+        <section class="result">
+            <div class="result-start">
+                <h1>Choose the options below to start the game</h1>
+            </div>
+            <div class="result-row hide">
+                <div class="result-col result-computer">
+                    <img class="result-computer-img" src="./img/ROCK.png" alt="">
+                </div>
+                <div class="result-col result-user">
+                    <img class="result-user-img" src="./img/PAPER.png" alt="">
+                </div>
+                <div class="vs">VS</div>
+            </div>
+            <div class="result-textbox hide">
+                <h1 class="">You Win</h1>
+            </div>
+        </section>
+
+        <div class="player-area">
+            <p class="player-area-caption">
+                choose your options
+            </p>
+            <div class="player-options">
+                <div class="player-option rock-option">
+                    <img src="./img/ROCK.png" alt="">
+                    <span>Rock</span>
+                </div>
+                <div class="player-option paper-option">
+                    <img src="./img/PAPER.png" alt="">
+                    <span>Paper</span>
+                </div>
+                <div class="player-option scissors-option">
+                    <img src="./img/SCISSORS.png" alt="">
+                    <span>Scissors</span>
+                </div>
+            </div>
         </div>
-        <div class="info"></div>
-        <div class="area-player">
-            <ul>
-                <li>
-                    <img src="img/gajah.png" class="gajah">
-                </li>
-                <li>
-                    <img src="img/orang.png" class="orang">
-                </li>
-                <li>
-                    <img src="img/semut.png" class="semut">
-                </li>
-            </ul>
-        </div>
-    </div>
+    </main>
 
 
     <script src="script.js"></script>

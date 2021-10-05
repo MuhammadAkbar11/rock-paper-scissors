@@ -37,6 +37,16 @@ main {
   }
 }
 
+.text-red {
+  color: $red;
+}
+.text-green {
+  color: $green;
+}
+.text-orange {
+  color: $orange;
+}
+
 @import "./header";
 @import "./score";
 @import "./result";

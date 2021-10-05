@@ -24,9 +24,17 @@ class Suit {
     return this.PAPER;
   }
 
-  setRandomImages(imgComp) {
-    const images = [this.ROCK, this.SCISSORS, this.PAPER];
+  shuffleImages(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 
+  setRandomImages(imgComp, imgPlayer) {
+    const images = [this.ROCK, this.SCISSORS, this.PAPER];
+    const compImages = this.shuffleImages(images);
     let i = 0;
     const dateStart = new Date().getTime();
     setInterval(function () {
@@ -34,8 +42,8 @@ class Suit {
         clearInterval;
         return;
       }
-      imgComp.setAttribute("src", "img/" + images[i++] + ".png");
-      if (i == images.length) i = 0;
+      imgComp.setAttribute("src", "img/" + compImages[i++] + ".png");
+      if (i == compImages.length) i = 0;
     }, 100);
   }
 
@@ -106,8 +114,6 @@ const suitClass = new Suit(choices);
       resultMessage.innerHTML = info;
 
       suitClass.setRemoveDisabledClass();
-
-      console.log(result);
     }, 1000);
   });
 });
